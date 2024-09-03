@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+Tarea: Crear una Aplicación de Recetas de Cocina con React
+Objetivo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crear una aplicación en React que permita a los usuarios gestionar recetas de cocina. La aplicación debe utilizar los hooks useState, useEffect, y useContext para manejar el estado y efectos secundarios. Ademas, crear una seccion de recetas y una seccion de detalles de una receta. La App debe permitir registrar y loguear usuarios.
+Requisitos Funcionales
+Manejo de usuarios
 
-## Available Scripts
+    Agregar nuevo usuario con un registro y poder loguearme en la app - Usar localStorage y sessionStorage.
+    Manejar dinamicamente rutas que puede acceder el usuario logueado y deslogueado.
 
-In the project directory, you can run:
+Agregar Recetas
 
-### `npm start`
+    Debe haber un formulario que permita a los usuarios agregar nuevas recetas.
+    Cada receta debe tener al menos un nombre y una descripción.
+    Al enviar el formulario, la nueva receta debe ser añadida a la lista de recetas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mostrar Lista de Recetas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    La aplicación debe mostrar una lista de todas las recetas agregadas.
+    Cada receta en la lista debe mostrar su nombre y descripción.
+    La lista debe actualizarse automáticamente cuando se agrega o elimina una receta.
 
-### `npm test`
+Mostrar Detalles de una receta
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    La aplicación debe mostrar detalles de cada receta, como su nombre, descripcion e ingredientes.
+    Debemos navegar hacia esta vista usando useParams con el id de la receta en particular.
 
-### `npm run build`
+Eliminar Recetas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Cada receta en la lista debe tener una opción para ser eliminada.
+    Al hacer clic en la opción de eliminar, la receta debe ser removida de la lista.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Persistencia de Datos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Las recetas deben ser guardadas en el almacenamiento local del navegador (localStorage).
+    Al recargar la página, las recetas previamente guardadas deben ser cargadas y mostradas.
 
-### `npm run eject`
+Requisitos Técnicos
+Uso de Hooks
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Utilizar useState para manejar el estado local de los componentes.
+    Utilizar useEffect para realizar efectos secundarios, como la carga inicial de recetas desde localStorage y la actualización del almacenamiento local cuando cambie la lista de recetas.
+    Utilizar useContext para compartir el estado de las recetas entre componentes sin necesidad de pasar props manualmente.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Componentes Reutilizables
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    La aplicación debe estar dividida en componentes reutilizables y bien estructurados.
+    Al menos debe haber componentes para el formulario de agregar recetas, la lista de recetas y cada elemento de receta.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Entrega
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    La aplicación debe ser funcional y cumplir con todos los requisitos mencionados.
+    El código debe ser limpio, bien comentado y seguir buenas prácticas de desarrollo.
